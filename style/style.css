@@ -1,6 +1,13 @@
+:root{
+    --background: #f0f0f0;
+    --dark : #2F4F4F;
+    --light :#588F89;
+    --transp-light: rgba(88, 143, 137, 0.8);
+}
 body{
     padding: 0 15%;
     font-family: Josefin Sans, sans-serif;
+    background-color: var(--background);
 }
 .row{
     display: flex;
