@@ -1,13 +1,17 @@
 :root{
-    --background: #f0f0f0;
+    --white: #f0f0f0;
     --dark : #2F4F4F;
     --light :#588F89;
     --transp-light: rgba(88, 143, 137, 0.8);
+    --imgBorderRadius: 10px;
+}
+* {
+    box-sizing: content-box;
+    margin: 0;
 }
 body{
-    padding: 0 15%;
     font-family: Josefin Sans, sans-serif;
-    background-color: var(--background);
+    background-color: var(--white);
 }
 .row{
     display: flex;
@@ -33,4 +37,29 @@ body{
 nav{
     width: 45%;
     padding: 0 4%;
+    font-weight: bold;
+}
+.topBar{
+    padding: 2% 0;
+    color: var(--white);
+}
+.title{
+    font-style: italic;
+    font-size: 40px;
+}
+header{
+    padding: 0 15%;
+    height: 100vh;
+    background-color: var(--dark);
+    box-shadow: 0 25px 15px rgba(17, 18, 18, 0.12);
+}
+.headerImg img{
+    border: 2px solid var(--light);
+    border-radius: var(--imgBorderRadius);
+
+    height: 66vh
+}
+
+main{
+    padding: 90px 15%;
 }
